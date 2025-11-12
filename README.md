@@ -107,7 +107,13 @@ medical-symptom-checker/
 ├── requirements.txt       # Python dependencies
 ├── LICENSE               # GPL v3 License
 ├── README.md             # Project documentation
+├── QUICKSTART.md         # Quick start guide
+├── CONTRIBUTING.md       # Contribution guidelines
 ├── .gitignore            # Git ignore rules
+├── screenshots/          # Application screenshots
+│   ├── Screenshot 2025-11-12 140704.png
+│   ├── Screenshot 2025-11-12 140722.png
+│   └── Screenshot 2025-11-12 140743.png
 ├── templates/
 │   └── index.html        # Main UI template
 └── static/
@@ -227,8 +233,17 @@ Before deploying to production:
 
 ## 📸 Screenshots
 
-![Medical Symptom Checker Interface](docs/screenshot.png)
-*Interactive symptom assessment interface with real-time feedback*
+### Main Interface
+![Symptom Input Interface](screenshots/Screenshot%202025-11-12%20140704.png)
+*Interactive symptom assessment with sliders and temperature input*
+
+### Diagnosis Results
+![Diagnosis Results](screenshots/Screenshot%202025-11-12%20140722.png)
+*Multiple disease detection with confidence scores and matched symptoms*
+
+### Detailed Recommendations
+![Medical Recommendations](screenshots/Screenshot%202025-11-12%20140743.png)
+*Personalized medical guidance and home care instructions*
 
 ## 📝 License
 

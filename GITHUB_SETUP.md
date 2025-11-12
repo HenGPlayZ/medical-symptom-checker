@@ -39,6 +39,7 @@ git add requirements.txt
 git add app.py
 git add templates/
 git add static/
+git add screenshots/
 ```
 
 **Note:** The `main.py` file will be ignored (it's in .gitignore)
@@ -79,7 +80,7 @@ On GitHub repository page:
 ## 10. Verify Upload
 
 Check that these files are visible on GitHub:
-- ✅ README.md (with badges)
+- ✅ README.md (with badges and screenshots)
 - ✅ app.py
 - ✅ requirements.txt
 - ✅ LICENSE
@@ -89,6 +90,7 @@ Check that these files are visible on GitHub:
 - ✅ templates/index.html
 - ✅ static/style.css
 - ✅ static/script.js
+- ✅ screenshots/ (3 PNG files)
 - ❌ main.py (should NOT be there)
 - ❌ .idea/ (should NOT be there)
 - ❌ .venv/ (should NOT be there)
