@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Medical Symptom Checker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Advanced Medical Symptom Checker</h1>
+            <p class="subtitle">AI-Powered Diagnostic Assessment System</p>
+            <div class="disclaimer">
+                ⚠️ This tool provides preliminary assessments only. Always consult a healthcare professional for medical advice.
+            </div>
+        </header>
+
+        <form id="symptomForm">
+            <!-- Temperature Section -->
+            <div class="form-section">
+                <h2>📊 Vital Signs</h2>
+                <div class="input-group">
+                    <label for="temperature">Body Temperature (°C):</label>
+                    <input type="number" id="temperature" name="temperature" step="0.1" min="35" max="43" value="36.6" required>
+                    <span class="input-hint">Normal: 36.1-37.2°C</span>
+                </div>
+            </div>
+
+            <!-- General Symptoms -->
+            <div class="form-section">
+                <h2>🤒 General Symptoms</h2>
+                <p class="section-subtitle">Rate intensity: 0 = None, 10 = Severe</p>
+                <div class="symptom-grid">
+                    <div class="symptom-item">
+                        <label for="fever">Fever/Chills</label>
+                        <input type="range" id="fever" name="fever" min="0" max="10" value="0">
+                        <span class="value" id="fever-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="fatigue">Fatigue/Weakness</label>
+                        <input type="range" id="fatigue" name="fatigue" min="0" max="10" value="0">
+                        <span class="value" id="fatigue-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="body_ache">Body Aches</label>
+                        <input type="range" id="body_ache" name="body_ache" min="0" max="10" value="0">
+                        <span class="value" id="body_ache-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="chills">Chills</label>
+                        <input type="range" id="chills" name="chills" min="0" max="10" value="0">
+                        <span class="value" id="chills-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Respiratory Symptoms -->
+            <div class="form-section">
+                <h2>🫁 Respiratory Symptoms</h2>
+                <div class="symptom-grid">
+                    <div class="symptom-item">
+                        <label for="cough">Cough</label>
+                        <input type="range" id="cough" name="cough" min="0" max="10" value="0">
+                        <span class="value" id="cough-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="difficulty_breathing">Difficulty Breathing</label>
+                        <input type="range" id="difficulty_breathing" name="difficulty_breathing" min="0" max="10" value="0">
+                        <span class="value" id="difficulty_breathing-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="chest_pain">Chest Pain</label>
+                        <input type="range" id="chest_pain" name="chest_pain" min="0" max="10" value="0">
+                        <span class="value" id="chest_pain-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="stuffy_nose">Stuffy/Blocked Nose</label>
+                        <input type="range" id="stuffy_nose" name="stuffy_nose" min="0" max="10" value="0">
+                        <span class="value" id="stuffy_nose-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="runny_nose">Runny Nose</label>
+                        <input type="range" id="runny_nose" name="runny_nose" min="0" max="10" value="0">
+                        <span class="value" id="runny_nose-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="sneezing">Sneezing</label>
+                        <input type="range" id="sneezing" name="sneezing" min="0" max="10" value="0">
+                        <span class="value" id="sneezing-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Head & Throat Symptoms -->
+            <div class="form-section">
+                <h2>🗣️ Head & Throat Symptoms</h2>
+                <div class="symptom-grid">
+                    <div class="symptom-item">
+                        <label for="headache">Headache</label>
+                        <input type="range" id="headache" name="headache" min="0" max="10" value="0">
+                        <span class="value" id="headache-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="sore_throat">Sore Throat</label>
+                        <input type="range" id="sore_throat" name="sore_throat" min="0" max="10" value="0">
+                        <span class="value" id="sore_throat-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="difficulty_swallowing">Difficulty Swallowing</label>
+                        <input type="range" id="difficulty_swallowing" name="difficulty_swallowing" min="0" max="10" value="0">
+                        <span class="value" id="difficulty_swallowing-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="facial_pain">Facial/Sinus Pain</label>
+                        <input type="range" id="facial_pain" name="facial_pain" min="0" max="10" value="0">
+                        <span class="value" id="facial_pain-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="swollen_lymph">Swollen Lymph Nodes</label>
+                        <input type="range" id="swollen_lymph" name="swollen_lymph" min="0" max="10" value="0">
+                        <span class="value" id="swollen_lymph-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sensory & Other Symptoms -->
+            <div class="form-section">
+                <h2>👁️ Sensory & Other Symptoms</h2>
+                <div class="symptom-grid">
+                    <div class="symptom-item">
+                        <label for="loss_of_taste">Loss of Taste/Smell</label>
+                        <input type="range" id="loss_of_taste" name="loss_of_taste" min="0" max="10" value="0">
+                        <span class="value" id="loss_of_taste-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="watery_eyes">Watery Eyes</label>
+                        <input type="range" id="watery_eyes" name="watery_eyes" min="0" max="10" value="0">
+                        <span class="value" id="watery_eyes-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="itchy_eyes">Itchy Eyes</label>
+                        <input type="range" id="itchy_eyes" name="itchy_eyes" min="0" max="10" value="0">
+                        <span class="value" id="itchy_eyes-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="sensitivity_light">Light Sensitivity</label>
+                        <input type="range" id="sensitivity_light" name="sensitivity_light" min="0" max="10" value="0">
+                        <span class="value" id="sensitivity_light-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="sensitivity_sound">Sound Sensitivity</label>
+                        <input type="range" id="sensitivity_sound" name="sensitivity_sound" min="0" max="10" value="0">
+                        <span class="value" id="sensitivity_sound-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="nausea">Nausea/Vomiting</label>
+                        <input type="range" id="nausea" name="nausea" min="0" max="10" value="0">
+                        <span class="value" id="nausea-value">0</span>
+                    </div>
+                    <div class="symptom-item">
+                        <label for="confusion">Confusion/Disorientation</label>
+                        <input type="range" id="confusion" name="confusion" min="0" max="10" value="0">
+                        <span class="value" id="confusion-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">🔍 Analyze Symptoms</button>
+        </form>
+
+        <div id="results" class="results hidden">
+            <div class="results-header">
+                <h2>📋 Diagnostic Assessment</h2>
+                <span id="timestamp" class="timestamp"></span>
+            </div>
+
+            <div id="critical-warning" class="critical-warning hidden">
+                <h3>🚨 CRITICAL WARNING</h3>
+                <ul id="critical-list"></ul>
+            </div>
+
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="card-label">Overall Severity</div>
+                    <div class="card-value" id="severity-score">-</div>
+                    <div class="severity-bar">
+                        <div id="severity-fill" class="severity-fill"></div>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-label">Active Symptoms</div>
+                    <div class="card-value" id="symptom-count">-</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-label">Temperature</div>
+                    <div class="card-value" id="temp-display">-</div>
+                </div>
+            </div>
+
+            <div id="diagnoses" class="diagnoses-section">
+                <h3>🔬 Possible Conditions</h3>
+                <div id="diagnosis-list"></div>
+            </div>
+
+            <div id="recommendations" class="recommendations-section">
+                <h3>💊 Personalized Recommendations</h3>
+
+                <div id="medical-rec" class="rec-category hidden">
+                    <h4>🏥 Medical Action Required</h4>
+                    <ul id="medical-list"></ul>
+                </div>
+
+                <div id="homecare-rec" class="rec-category hidden">
+                    <h4>🏠 Home Care</h4>
+                    <ul id="homecare-list"></ul>
+                </div>
+
+                <div id="prevention-rec" class="rec-category hidden">
+                    <h4>🛡️ Prevention & Hygiene</h4>
+                    <ul id="prevention-list"></ul>
+                </div>
+            </div>
+
+            <button id="reset-btn" class="reset-btn">🔄 Start New Assessment</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Advanced Medical Symptom Checker | For educational purposes only</p>
+        <p class="developer-credit"><strong>@pwd by hzn</strong></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
