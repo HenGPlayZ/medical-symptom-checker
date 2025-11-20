@@ -48,3 +48,8 @@ instance/
 
 # Old/deprecated files
 main.py
+
+# Test files (optional - remove this line if you want to commit tests)
+# test_system.py
+# REFACTORING_SUMMARY.md
+
