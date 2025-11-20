@@ -1,140 +1,140 @@
 {
-}
-  }
-    }
-      "incubation": "episodic"
-      "description": "Migraine Headache",
-      "urgency": "normal",
-      "severity": "medium",
-      "temp_range": [36.0, 37.5],
-      },
-        "sensitivity_sound": 0.8
-        "sensitivity_light": 0.85,
-        "nausea": 0.8,
-        "headache": 0.95,
-      "symptoms": {
-    "Migraine": {
-    },
-      "incubation": "1-3 weeks"
-      "description": "Pneumonia (Bacterial/Viral)",
-      "urgency": "urgent",
-      "severity": "high",
-      "temp_range": [38.5, 40.5],
-      },
-        "chills": 0.8
-        "fatigue": 0.8,
-        "fever": 0.9,
-        "chest_pain": 0.85,
-        "difficulty_breathing": 0.9,
-        "cough": 0.9,
-      "symptoms": {
-    "Pneumonia": {
-    },
-      "incubation": "immediate"
-      "description": "Seasonal Allergies",
-      "urgency": "normal",
-      "severity": "low",
-      "temp_range": [36.0, 37.2],
-      },
-        "watery_eyes": 0.8
-        "stuffy_nose": 0.8,
-        "itchy_eyes": 0.85,
-        "runny_nose": 0.9,
-        "sneezing": 0.9,
-      "symptoms": {
-    "Allergies": {
-    },
-      "incubation": "3-7 days"
-      "description": "Acute Bronchitis",
-      "urgency": "warning",
-      "severity": "medium",
-      "temp_range": [37.0, 38.5],
-      },
-        "body_ache": 0.6
-        "fever": 0.6,
-        "difficulty_breathing": 0.7,
-        "fatigue": 0.75,
-        "chest_pain": 0.7,
-        "cough": 0.95,
-      "symptoms": {
-    "Bronchitis": {
-    },
-      "incubation": "3-7 days"
-      "description": "Sinus Infection",
-      "urgency": "normal",
-      "severity": "medium",
-      "temp_range": [36.5, 38.5],
-      },
-        "fatigue": 0.6
-        "cough": 0.6,
-        "runny_nose": 0.75,
-        "headache": 0.8,
-        "facial_pain": 0.85,
-        "stuffy_nose": 0.9,
-      "symptoms": {
-    "Sinusitis": {
-    },
-      "incubation": "2-5 days"
-      "description": "Streptococcal Pharyngitis",
-      "urgency": "warning",
-      "severity": "medium",
-      "temp_range": [37.8, 39.5],
-      },
-        "swollen_lymph": 0.8
-        "difficulty_swallowing": 0.9,
-        "headache": 0.7,
-        "fever": 0.8,
-        "sore_throat": 0.95,
-      "symptoms": {
-    "Strep Throat": {
-    },
-      "incubation": "1-3 days"
-      "description": "Common Cold (Viral)",
-      "urgency": "normal",
-      "severity": "low",
-      "temp_range": [36.5, 38.0],
-      },
-        "headache": 0.5
-        "cough": 0.6,
-        "sneezing": 0.85,
-        "sore_throat": 0.7,
-        "runny_nose": 0.9,
-        "stuffy_nose": 0.9,
-      "symptoms": {
-    "Common Cold": {
-    },
-      "incubation": "1-4 days"
-      "description": "Seasonal Influenza (Flu)",
-      "urgency": "warning",
-      "severity": "high",
-      "temp_range": [38.0, 40.0],
-      },
-        "chills": 0.85
-        "sore_throat": 0.6,
-        "cough": 0.75,
-        "headache": 0.8,
-        "fatigue": 0.85,
-        "body_ache": 0.9,
-        "fever": 0.95,
-      "symptoms": {
-    "Influenza": {
-    },
-      "incubation": "2-14 days"
-      "description": "COVID-19 (Coronavirus Disease)",
-      "urgency": "urgent",
-      "severity": "high",
-      "temp_range": [37.5, 40.0],
-      },
-        "chest_pain": 0.7
-        "difficulty_breathing": 0.85,
-        "loss_of_taste": 0.95,
-        "headache": 0.65,
-        "sore_throat": 0.6,
-        "body_ache": 0.7,
-        "fatigue": 0.85,
-        "cough": 0.8,
-        "fever": 0.9,
-      "symptoms": {
-    "COVID-19": {
   "diseases": {
+    "COVID-19": {
+      "symptoms": {
+        "fever": 0.9,
+        "cough": 0.8,
+        "fatigue": 0.85,
+        "body_ache": 0.7,
+        "sore_throat": 0.6,
+        "headache": 0.65,
+        "loss_of_taste": 0.95,
+        "difficulty_breathing": 0.85,
+        "chest_pain": 0.7
+      },
+      "temp_range": [37.5, 40.0],
+      "severity": "high",
+      "urgency": "urgent",
+      "description": "COVID-19 (Coronavirus Disease)",
+      "incubation": "2-14 days"
+    },
+    "Influenza": {
+      "symptoms": {
+        "fever": 0.95,
+        "body_ache": 0.9,
+        "fatigue": 0.85,
+        "headache": 0.8,
+        "cough": 0.75,
+        "sore_throat": 0.6,
+        "chills": 0.85
+      },
+      "temp_range": [38.0, 40.0],
+      "severity": "high",
+      "urgency": "warning",
+      "description": "Seasonal Influenza (Flu)",
+      "incubation": "1-4 days"
+    },
+    "Common Cold": {
+      "symptoms": {
+        "stuffy_nose": 0.9,
+        "runny_nose": 0.9,
+        "sore_throat": 0.7,
+        "sneezing": 0.85,
+        "cough": 0.6,
+        "headache": 0.5
+      },
+      "temp_range": [36.5, 38.0],
+      "severity": "low",
+      "urgency": "normal",
+      "description": "Common Cold (Viral)",
+      "incubation": "1-3 days"
+    },
+    "Strep Throat": {
+      "symptoms": {
+        "sore_throat": 0.95,
+        "fever": 0.8,
+        "headache": 0.7,
+        "difficulty_swallowing": 0.9,
+        "swollen_lymph": 0.8
+      },
+      "temp_range": [37.8, 39.5],
+      "severity": "medium",
+      "urgency": "warning",
+      "description": "Streptococcal Pharyngitis",
+      "incubation": "2-5 days"
+    },
+    "Sinusitis": {
+      "symptoms": {
+        "stuffy_nose": 0.9,
+        "facial_pain": 0.85,
+        "headache": 0.8,
+        "runny_nose": 0.75,
+        "cough": 0.6,
+        "fatigue": 0.6
+      },
+      "temp_range": [36.5, 38.5],
+      "severity": "medium",
+      "urgency": "normal",
+      "description": "Sinus Infection",
+      "incubation": "3-7 days"
+    },
+    "Bronchitis": {
+      "symptoms": {
+        "cough": 0.95,
+        "chest_pain": 0.7,
+        "fatigue": 0.75,
+        "difficulty_breathing": 0.7,
+        "fever": 0.6,
+        "body_ache": 0.6
+      },
+      "temp_range": [37.0, 38.5],
+      "severity": "medium",
+      "urgency": "warning",
+      "description": "Acute Bronchitis",
+      "incubation": "3-7 days"
+    },
+    "Allergies": {
+      "symptoms": {
+        "sneezing": 0.9,
+        "runny_nose": 0.9,
+        "itchy_eyes": 0.85,
+        "stuffy_nose": 0.8,
+        "watery_eyes": 0.8
+      },
+      "temp_range": [36.0, 37.2],
+      "severity": "low",
+      "urgency": "normal",
+      "description": "Seasonal Allergies",
+      "incubation": "immediate"
+    },
+    "Pneumonia": {
+      "symptoms": {
+        "cough": 0.9,
+        "difficulty_breathing": 0.9,
+        "chest_pain": 0.85,
+        "fever": 0.9,
+        "fatigue": 0.8,
+        "chills": 0.8
+      },
+      "temp_range": [38.5, 40.5],
+      "severity": "high",
+      "urgency": "urgent",
+      "description": "Pneumonia (Bacterial/Viral)",
+      "incubation": "1-3 weeks"
+    },
+    "Migraine": {
+      "symptoms": {
+        "headache": 0.95,
+        "nausea": 0.8,
+        "sensitivity_light": 0.85,
+        "sensitivity_sound": 0.8
+      },
+      "temp_range": [36.0, 37.5],
+      "severity": "medium",
+      "urgency": "normal",
+      "description": "Migraine Headache",
+      "incubation": "episodic"
+    }
+  }
+}
 
