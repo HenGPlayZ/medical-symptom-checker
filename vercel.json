@@ -6,12 +6,12 @@
       "use": "@vercel/python",
       "config": {
         "includeFiles": [
-          "data/**",
-          "templates/**",
+          "data/**/*.json",
+          "templates/**/*.html",
           "static/**",
-          "utils/**",
-          "*.py",
-          "*.json"
+          "utils/**/*.py",
+          "app.py",
+          "config.py"
         ]
       }
     }
